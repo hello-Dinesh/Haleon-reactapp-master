@@ -68,7 +68,6 @@ const ScrollMenu = ({ sectionIds }) => {
       </ul>
       <div
         className="absolute h-1 w-10 bg-green-500 rounded-full cursor-pointer"
-        style={{ left: `${blobPosition}%` }}
         onMouseDown={handleMouseDown}
       />
     </div>
