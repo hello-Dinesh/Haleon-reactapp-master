@@ -68,6 +68,8 @@ const ScrollMenu = ({ sectionIds }) => {
       </ul>
       <div
         className="absolute h-1 w-10 bg-green-500 rounded-full cursor-pointer"
+        style={{ left: `${0}%` }}
+        style={{ Right: `${0}%` }}
         onMouseDown={handleMouseDown}
       />
     </div>
