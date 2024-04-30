@@ -6,8 +6,7 @@ const ScrollMenu = ({ sectionIds }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [blobPosition, setBlobPosition] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
-  blobPosition = '5%'
-  
+    
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
@@ -17,7 +16,8 @@ const ScrollMenu = ({ sectionIds }) => {
     setScrollProgress(progress);
 
     const blobMaxPosition = 100 - 20; // 10 is the blob size
-    const newPosition = isDragging ? blobPosition : Math.min(progress, blobMaxPosition);
+    const newPosition = isDragging ? blobPosition = 0 ? 5 : Math.min(progress, blobMaxPosition);
+    
     setBlobPosition(newPosition);
   };
 
