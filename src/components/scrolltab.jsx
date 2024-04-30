@@ -14,10 +14,10 @@ const ScrollMenu = ({ sectionIds }) => {
 
     const progress = (scrollPosition / (documentHeight - windowHeight)) * 100;
     setScrollProgress(progress);
-    if(blobPosition = 0) blobPosition = 5;
     const blobMaxPosition = 100 - 20; // 10 is the blob size
     const newPosition = isDragging ? blobPosition : Math.min(progress, blobMaxPosition);
-    
+
+    if(newPosition = 0) newPosition= 5;
     setBlobPosition(newPosition);
   };
 
