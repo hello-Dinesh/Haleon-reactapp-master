@@ -6,7 +6,8 @@ const ScrollMenu = ({ sectionIds }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [blobPosition, setBlobPosition] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
-
+  blobPosition = '5%'
+  
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
